@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/mglogo"
+        android:label="MyGym"
+        android:roundIcon="@drawable/mglogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".forgotPass"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ActivitySchede"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:icon="@drawable/mglogo"
+            android:label="MyGym">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".ActivityMediaDati"
+            android:icon="@drawable/mglogo"
+            android:label="MyGym" />
+        <activity android:name=".ActivityTimer" />
+        <activity
+            android:name=".ActivityScarico"
+            android:icon="@drawable/mglogo"
+            android:label="Sezione Calcolo Scarico" />
+        <activity android:name=".ListActivity" />
+        <activity android:name=".ListActivity2" />
+        <activity android:name=".ListActivity3" />
+        <activity android:name=".ListActivity4" />
+        <activity android:name=".ListActivity5" />
+        <activity android:name=".ListActivity6" />
+        <activity android:name=".ListActivity7" />
+        <activity android:name=".ActivitySpiegazione" />
+        <activity
+            android:name=".Esercizi"
+            android:icon="@drawable/mglogo"
+            android:label="Sezione Calcolo Scarico" />
+        <activity android:name="package1.ActivitySpalle" />
+        <activity android:name="package1.ActivityAddome" />
+        <activity android:name="package1.ActivityBicipiti" />
+        <activity android:name="package1.ActivityFemorali" />
+        <activity android:name="package1.ActivityPetto" />
+        <activity android:name="package1.ActivityPolpacci" />
+        <activity android:name="package1.ActivityQuadricipiti" />
+        <activity android:name="package1.ActivitySchiena" />
+        <activity android:name="package1.ActivityTricipiti" />
+    </application>
+
+</manifest>

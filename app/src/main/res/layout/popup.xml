@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="@string/title"
+            android:id="@+id/titolo"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/Exercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titolo"
+            android:hint="@string/Exercise"
+            android:minHeight="48dp"
+            android:inputType="text"
+            android:textColorHint="#546E7A"
+            android:importantForAutofill="no">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/Reps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Exercise"
+            android:hint="@string/Reps"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A"
+            android:importantForAutofill="no">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/Rest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Weight"
+            android:hint="@string/inserisci_pausa_in_secondi"
+            android:inputType="number|none"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A"
+            android:importantForAutofill="no">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/Weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Reps"
+            android:hint="@string/Weight"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A"
+            android:importantForAutofill="no">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="357dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/Rest"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="@string/salva"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck">
+
+        </Button>
+
+
+    </RelativeLayout>
+</LinearLayout>

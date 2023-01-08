@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="La Tua Media E'"
+            android:id="@+id/titolosc"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/Battititxt"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titolosc"
+            android:text="Media battiti a riposo: "
+            android:minHeight="48dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/Sonnotxt"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Battititxt"
+            android:text="Ore di sonno medie: "
+            android:minHeight="48dp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/Intensitatxt"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/Sonnotxt"
+            android:text="Intensità allenamento media: "
+            android:minHeight="48dp">
+
+
+
+        </TextView>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="Punteggio Finale:"
+            android:id="@+id/punteggiotx"
+            android:layout_below="@id/Intensitatxt"
+            android:textStyle="bold"
+            android:textSize="25sp"
+
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_below="@id/punteggiotx"
+            android:text="CALCOLA"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textStyle="italic"
+            android:id="@+id/buttonCalcola"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+
+    </RelativeLayout>
+</LinearLayout>

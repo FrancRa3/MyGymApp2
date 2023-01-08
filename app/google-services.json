@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "787817587658",
+    "firebase_url": "https://mygym3-4cd4a-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "mygym3-4cd4a",
+    "storage_bucket": "mygym3-4cd4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787817587658:android:b91466a7613b22f6b0a533",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787817587658-vhu4r8bibjrb063dtp7gmsrmtdtv2rlr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA91rQuU0v9uA6rrRqT8WWUx-L1sPWSg2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787817587658-vhu4r8bibjrb063dtp7gmsrmtdtv2rlr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

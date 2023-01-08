@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp"
+    app:cardBackgroundColor="@android:color/holo_blue_dark"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:padding="8dp">
+        
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:id="@+id/bt_menu"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_menu_24"
+            android:padding="8dp"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textActionBar"
+            android:layout_centerInParent="true"
+            android:text="MyGym"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"></TextView>
+        
+        
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView >

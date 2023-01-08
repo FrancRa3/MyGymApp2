@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="@string/calcolo_settimana_scarico"
+            android:id="@+id/titolosc"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/Datasc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titolosc"
+            android:hint="@string/inserisci_data"
+            android:importantForAutofill="no"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/Battiti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Datasc"
+            android:hint="@string/inserisci_media_battiti"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/Sonno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Battiti"
+            android:hint="@string/inserisci_ore_di_sonno"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A">
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/Intensita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Sonno"
+            android:hint="@string/intensit_allenamento_da_1_a_10"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/saveButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Intensita"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="@string/salva"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            tools:ignore="TextContrastCheck">
+
+        </Button>
+
+
+    </RelativeLayout>
+</LinearLayout>

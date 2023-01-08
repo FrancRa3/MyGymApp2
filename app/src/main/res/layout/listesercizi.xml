@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_marginTop="5dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="273dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/layout"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/item_names"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_name"
+
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/image_es"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.025"
+                app:layout_constraintStart_toStartOf="@+id/layout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.533"></TextView>
+
+            <ImageView
+                android:id="@+id/image_es"
+                android:layout_width="131dp"
+                android:layout_height="151dp"
+
+                android:layout_marginStart="8dp"
+
+                android:contentDescription="@string/imagex"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <ImageButton
+                android:id="@+id/esercizi_spiegaz"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+
+
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@android:color/holo_blue_dark"
+
+                android:src="@drawable/ic_baseline_text_snippet_24"
+
+                android:text="@string/spiegazionebutt"
+
+
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/layout"
+                app:layout_constraintTop_toBottomOf="@+id/image_es"></ImageButton>
+
+            <TextView
+                android:id="@+id/es_spieg"
+                android:layout_width="198dp"
+                android:layout_height="224dp"
+                android:text="@string/spiegazione"
+
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.753"
+                app:layout_constraintStart_toEndOf="@+id/image_es"
+                app:layout_constraintTop_toBottomOf="@+id/item_names"
+                app:layout_constraintVertical_bias="0.673"></TextView>
+
+            <ImageButton
+                android:id="@+id/esercizi_video"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+
+                android:layout_marginEnd="36dp"
+
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:src="@drawable/ic_baseline_ondemand_video_24"
+                android:text="@string/video"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/es_spieg"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/esercizi_spiegaz"
+                app:layout_constraintTop_toBottomOf="@+id/image_es"
+                app:layout_constraintVertical_bias="0.761"></ImageButton>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
